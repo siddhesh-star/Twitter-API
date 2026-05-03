@@ -1,0 +1,14 @@
+{
+  "name": "twitter-esg-leads",
+  "version": "1.0.0",
+  "description": "Fetches tweets for ESG/sustainability leads",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.8",
+    "dotenv": "^16.4.5",
+    "express": "^4.22.1"
+  }
+}

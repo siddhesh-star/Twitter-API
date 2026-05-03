@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twitter ESG Leads Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="app-container">
+        <!-- Header -->
+        <header class="header glass">
+            <div class="header-content">
+                <h1>Twitter ESG Leads</h1>
+                <div class="status-indicator">
+                    <span class="pulse"></span>
+                    <span id="connection-status">Connecting to Server...</span>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            
+            <!-- Left Column: Terminal / Logs -->
+            <section class="panel terminal-panel glass">
+                <div class="panel-header">
+                    <h2>Live Activity Logs</h2>
+                    <div class="window-controls">
+                        <span></span><span></span><span></span>
+                    </div>
+                </div>
+                <div class="terminal-body" id="terminal">
+                    <!-- Logs will be injected here -->
+                    <div class="log-entry info">[System] Awaiting logs...</div>
+                </div>
+            </section>
+
+            <!-- Right Column: Leads Display -->
+            <section class="panel leads-panel glass">
+                <div class="panel-header">
+                    <h2>Extracted Leads <span class="badge" id="leads-count">0</span></h2>
+                    <button class="refresh-btn" id="refresh-btn">Refresh</button>
+                </div>
+                <div class="leads-grid" id="leads-grid">
+                    <!-- Leads will be injected here -->
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
